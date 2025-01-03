@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6B1D726-47A4-4FA0-82AE-2BFD05D6492D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Fiziix</RootNamespace>
+    <AssemblyName>Fiziix</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\FiziixAPI\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\FiziixAPI\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\FiziixAPI\packages\Newtonsoft.Json.Bson.1.0.2\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\FiziixAPI\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\FiziixAPI\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\FiziixAPI\packages\Microsoft.AspNet.WebApi.Client.6.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\FiziixAPI\packages\System.Net.Http.Json.8.0.0\lib\net462\System.Net.Http.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\FiziixAPI\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\FiziixAPI\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\FiziixAPI\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\FiziixAPI\packages\System.Text.Json.8.0.4\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\FiziixAPI\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\FiziixAPI\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GenerateVerificationCode.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePages\EditProfilePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomePages\EditProfilePage.Designer.cs">
+      <DependentUpon>EditProfilePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePages\HomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomePages\HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePages\JoinProjectPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomePages\JoinProjectPage.Designer.cs">
+      <DependentUpon>JoinProjectPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePages\MyTasksPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomePages\MyTasksPage.Designer.cs">
+      <DependentUpon>MyTasksPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePages\NewPostPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePages\NewPostPage.Designer.cs">
+      <DependentUpon>NewPostPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePages\NewProjectPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomePages\NewProjectPage.Designer.cs">
+      <DependentUpon>NewProjectPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePages\NewTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePages\NewTask.Designer.cs">
+      <DependentUpon>NewTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePages\PostsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomePages\PostsPage.Designer.cs">
+      <DependentUpon>PostsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePages\ProjectsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomePages\ProjectsPage.Designer.cs">
+      <DependentUpon>ProjectsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePages\ProjectMainPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomePages\ProjectMainPage.Designer.cs">
+      <DependentUpon>ProjectMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageConvert.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPages\IForgotMyPassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginPages\IForgotMyPassword.Designer.cs">
+      <DependentUpon>IForgotMyPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPages\LoginPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginPages\LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddFileDto.cs" />
+    <Compile Include="Models\HomePageStatsDto.cs" />
+    <Compile Include="Models\LoginDto.cs" />
+    <Compile Include="Models\PostDto.cs" />
+    <Compile Include="Models\PostsDto.cs" />
+    <Compile Include="Models\Project.cs" />
+    <Compile Include="Models\ProjectsDto .cs" />
+    <Compile Include="Models\ProjectDto.cs" />
+    <Compile Include="Models\TaskDto.cs" />
+    <Compile Include="Models\Tasks.cs" />
+    <Compile Include="Models\UptadeProfileDto.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserDto.cs" />
+    <Compile Include="Models\UserIDDto.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LoginPages\RegisterPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginPages\RegisterPage.Designer.cs">
+      <DependentUpon>RegisterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPages\RegisterPage1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginPages\RegisterPage1.Designer.cs">
+      <DependentUpon>RegisterPage1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePages\EditProfilePage.resx">
+      <DependentUpon>EditProfilePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePages\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePages\JoinProjectPage.resx">
+      <DependentUpon>JoinProjectPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePages\MyTasksPage.resx">
+      <DependentUpon>MyTasksPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePages\NewPostPage.resx">
+      <DependentUpon>NewPostPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePages\NewProjectPage.resx">
+      <DependentUpon>NewProjectPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePages\NewTask.resx">
+      <DependentUpon>NewTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePages\PostsPage.resx">
+      <DependentUpon>PostsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePages\ProjectMainPage.resx">
+      <DependentUpon>ProjectMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePages\ProjectsPage.resx">
+      <DependentUpon>ProjectsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPages\IForgotMyPassword.resx">
+      <DependentUpon>IForgotMyPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPages\LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LoginPages\RegisterPage.resx">
+      <DependentUpon>RegisterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPages\RegisterPage1.resx">
+      <DependentUpon>RegisterPage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\add.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\group.png" />
+    <Content Include="images\like.png" />
+    <Content Include="images\likee-Photoroom.png" />
+    <Content Include="images\likeempty.png" />
+    <Content Include="images\newtask.png" />
+    <Content Include="images\person_remove_42dp_EA3323_FILL0_wght400_GRAD0_opsz40.png" />
+    <Content Include="images\removemember.png" />
+    <Content Include="images\task.png" />
+    <Content Include="images\yeşilev.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

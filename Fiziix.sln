@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiziix", "Fiziix\Fiziix.csproj", "{F6B1D726-47A4-4FA0-82AE-2BFD05D6492D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6B1D726-47A4-4FA0-82AE-2BFD05D6492D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B1D726-47A4-4FA0-82AE-2BFD05D6492D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B1D726-47A4-4FA0-82AE-2BFD05D6492D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B1D726-47A4-4FA0-82AE-2BFD05D6492D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90FD776B-4FF6-4F6F-8BA5-75D10C773A65}
+	EndGlobalSection
+EndGlobal
